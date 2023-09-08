@@ -163,11 +163,11 @@ def SWAnalysisPage():
                 ax = fig.add_subplot(111, polar=True)
 
                 # Draw one axe per variable + add labels
-                plt.xticks(angles[:-1], categories, color='white', size=8)
+                plt.xticks(angles[:-1], categories, color='white', size=12)
 
                 # Draw ylabels
                 ax.set_rlabel_position(0)
-                plt.yticks([1, 2, 3, 4, 5], ["1", "2", "3", "4", "5"], color="white", size=7)
+                plt.yticks([1, 2, 3, 4, 5], ["1", "2", "3", "4", "5"], color="white", size=10)
                 plt.ylim(0, 5)
 
                 # Plot data
@@ -178,7 +178,7 @@ def SWAnalysisPage():
 
                 # Set background color and grid color for dark mode
                 ax.spines['polar'].set_color('black')
-                ax.spines['polar'].set_linewidth(0.5)
+                ax.spines['polar'].set_linewidth(1)
                 ax.yaxis.grid(color='white', alpha=0.5)
 
                 # Set the background color of the figure
