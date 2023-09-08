@@ -177,7 +177,7 @@ def SWAnalysisPage():
                 ax.fill(angles, values, 'pink', alpha=0.3)
 
                 # Set background color and grid color for dark mode
-                ax.spines['polar'].set_color('black')
+                ax.spines['polar'].set_color('white')
                 ax.spines['polar'].set_linewidth(1)
                 ax.yaxis.grid(color='white', alpha=0.5)
 
