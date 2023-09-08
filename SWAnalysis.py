@@ -171,7 +171,7 @@ def SWAnalysisPage():
                 plt.ylim(0, 5)
 
                 # Plot data
-                ax.plot(angles, values, linewidth=1, linestyle='solid', color='pink')
+                ax.plot(angles, values, linewidth=1, linestyle='solid', color='#FF69B4')
 
                 # Fill area
                 ax.fill(angles, values, 'pink', alpha=0.3)
