@@ -66,8 +66,7 @@ def draw_all(
         ```
 
         
-        This App is built using transformers and LDA Unsupervised models to recognize the topics present in the users reviews and classifier whether the review has a positive, negative or neutral cognotation.
-        
+        This app is built using transformers and LDA unsupervised models to recognize the topics present in user reviews and classify whether the review has a positive, negative, or neutral connotation.
         """
     )
     
@@ -88,17 +87,16 @@ with st.sidebar:
 
             st.write("""
                     
-                    This Natural Language Processing Based Web App was trained with Google and Yelp datasets
-                    which provide reviews from different stores all over USA.
+                    This Natural Language Processing Based Web App was trained using 
+                    Google and Yelp datasets, which include reviews from various stores across the USA.
             """)
             
             st.write("""
                     
-                    This NLP Web App is based on two main models. 
-                    1. A BERT model for sentiment analysis allowing to identify
-                     whether a review has a positive, negative or neutral cognotation.
-                    2. A LDA Unsupervised model for topic modelling allowing to recognize 
-                     the presence or not of 10 topics in a review.
+                    This NLP web app is based on two main models:
+                    1. A BERT model for sentiment analysis, which identifies whether a review has a positive,
+                    negative, or neutral connotation.
+                    2. An LDA unsupervised model for topic modeling, which recognizes the presence of 10 topics in a review.
             """)
 
         elif choice=="Review Analysis":
