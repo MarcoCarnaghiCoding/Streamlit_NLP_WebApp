@@ -127,9 +127,9 @@ def ReviewAnalysisPage():
         y_pos = np.arange(len(labels))
         ax.barh(y_pos, probabilities, color=bar_color)
         ax.set_yticks(y_pos)
-        ax.set_yticklabels(labels, fontsize=20)  # Specify the desired font size
+        ax.set_yticklabels(labels, fontsize=40)  # Specify the desired font size
         ax.invert_yaxis()
-        ax.set_xlabel('Probability', fontsize=20)  # Specify the desired font size
+        ax.set_xlabel('Probability', fontsize=40)  # Specify the desired font size
 
         # Display the horizontal bar plot using Streamlit
         st.pyplot(fig)
@@ -140,7 +140,7 @@ def ReviewAnalysisPage():
         colors = cmap(np.linspace(0, 1, len(labels)))
         ax.pie(probabilities, labels=labels, autopct='%1.1f%%', colors=colors)
         ax.axis('equal')
-        ax.tick_params(labelsize=20)  # Specify the desired font size for tick labels
+        ax.tick_params(labelsize=40)  # Specify the desired font size for tick labels
 
         # Display the pie plot using Streamlit
         st.pyplot(fig)
