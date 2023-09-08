@@ -108,11 +108,11 @@ def ReviewAnalysisPage():
 
         
         if sentiment =="POSITIVE":
-            st.write("""# This text has a Positive Sentiment.  🤗""")
+            st.write("""### This text has a Positive Sentiment.  🤗""")
         elif sentiment =="NEGATIVE":
-            st.write("""# This text has a Negative Sentiment. 😤""")
+            st.write("""### This text has a Negative Sentiment. 😤""")
         elif sentiment =="NEUTRAL":
-            st.write("""# This text seems Neutral ... 😐""")
+            st.write("""### This text seems Neutral ... 😐""")
 
         # ---------------------------------------------------------------------
         st.subheader("Topic Modelling")
