@@ -171,14 +171,14 @@ def SWAnalysisPage():
                 plt.ylim(0, 5)
 
                 # Plot data
-                ax.plot(angles, values, linewidth=1, linestyle='solid', color='#FF69B4')
+                ax.plot(angles, values, linewidth=1.5, linestyle='solid', color='pink')
 
                 # Fill area
                 ax.fill(angles, values, 'pink', alpha=0.3)
 
                 # Set background color and grid color for dark mode
                 ax.spines['polar'].set_color('white')
-                ax.spines['polar'].set_linewidth(1)
+                ax.spines['polar'].set_linewidth(0.5)
                 ax.yaxis.grid(color='white', alpha=0.5)
 
                 # Set the background color of the figure
