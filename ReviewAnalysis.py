@@ -123,7 +123,7 @@ def ReviewAnalysisPage():
         bar_color = '#FF69B4'
 
         # Horizontal Bar Plot
-        fig, ax = plt.subplots(figsize=(10, 6))
+        fig, ax = plt.subplots(figsize=(20, 12))
         y_pos = np.arange(len(labels))
         ax.barh(y_pos, probabilities, color=bar_color)
         ax.set_yticks(y_pos)
@@ -135,7 +135,7 @@ def ReviewAnalysisPage():
         st.pyplot(fig)
 
         # Pie Plot
-        fig, ax = plt.subplots(figsize=(10, 6))
+        fig, ax = plt.subplots(figsize=(20, 12))
         cmap = cm.get_cmap('RdPu')
         colors = cmap(np.linspace(0, 1, len(labels)))
         ax.pie(probabilities, labels=labels, autopct='%1.1f%%', colors=colors)
