@@ -135,12 +135,12 @@ def ReviewAnalysisPage():
         st.pyplot(fig)
 
         # Pie Plot
-        fig, ax = plt.subplots(figsize=(20, 12))
+        fig, ax = plt.subplots(figsize=(10, 6))
         cmap = cm.get_cmap('RdPu')
         colors = cmap(np.linspace(0, 1, len(labels)))
         ax.pie(probabilities, labels=labels, autopct='%1.1f%%', colors=colors)
         ax.axis('equal')
-        ax.tick_params(labelsize=40)  # Specify the desired font size for tick labels
+        ax.tick_params(labelsize=30)  # Specify the desired font size for tick labels
 
         # Display the pie plot using Streamlit
         st.pyplot(fig)
