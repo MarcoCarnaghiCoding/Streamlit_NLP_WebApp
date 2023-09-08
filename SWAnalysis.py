@@ -159,7 +159,7 @@ def SWAnalysisPage():
                 angles += angles[:1]
 
                 # Initialize the spider plot
-                fig = plt.figure(facecolor='#0e1117')
+                fig = plt.figure(facecolor='#212636')
                 ax = fig.add_subplot(111, polar=True)
 
                 # Draw one axe per variable + add labels
@@ -182,7 +182,7 @@ def SWAnalysisPage():
                 ax.yaxis.grid(color='white', alpha=0.5)
 
                 # Set the background color of the figure
-                fig.set_facecolor('#0e1117')
+                fig.set_facecolor('#212636')
 
                 # Show the graph
                 st.pyplot(fig)
